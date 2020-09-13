@@ -1,0 +1,33 @@
+section {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+
+}
+
+section div {
+    flex: 2;
+    height: inherit;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    padding: 1em;
+    margin: 0 0 0 2em;
+    width: 120px;
+    height: 45px;
+}
+
+.login {
+    flex: 1;
+    margin: 0;
+
+}

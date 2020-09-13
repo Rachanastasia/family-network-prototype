@@ -1,0 +1,6 @@
+.calendarOverview {
+    flex: 3;
+    background-color: red;
+    width: inherit;
+    height: 100%;
+}

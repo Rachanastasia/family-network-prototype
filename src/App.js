@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import NotLoggedInRouter from './notLoggedIn/NotLoggedInRouter';
+import Main from './isLoggedIn/Main';
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoggedIn: true
+    }
+  }
+
+
+  handleLogin = (e) => {
+    e.preventDefault();
+
+    this.setState({
+      isLoggedIn: !this.state.isLoggedIn
+    })
+
+  }
+
+
+  render() {
+    return (
+      <main>
+        {this.state.isLoggedIn === false
+          ? <NotLoggedInRouter />
+          : <Main />}
+
+      </main>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.medOverview {
+    width: inherit;
+    height: inherit;
+    flex: 1;
+}
+
+.needsRefill {
+    outline: 1px solid red;
+}

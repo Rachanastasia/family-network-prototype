@@ -1,0 +1,10 @@
+.doctorOverview {
+    flex: 1;
+    background-color: palevioletred;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 1em;
+    justify-content: center;
+
+}
