@@ -105,7 +105,7 @@ class Main extends PureComponent {
                     dose: '50mg',
                     takeDaily: true,
                     takeWithFood: false,
-                    refill: false,
+                    refill: true,
                     refillDate: new Date(),
                     contact: 'Jim Smith',
                     added: new Date()
